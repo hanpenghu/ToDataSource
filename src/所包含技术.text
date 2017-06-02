@@ -1,0 +1,10 @@
+1、双数据源
+2、数据源就算数据库不开,  tomcat启动也不报错,因为我们开启了懒加载,在第一次使用数据库的时候c3p0才会被使用
+3、16进制和图片之间的相互转换
+4、base64和图片之间的转换
+5、在spring中配置sqlTemplet,使其可以批处理(E:\1\work_space\ToDataSource\src\com\aiBanShi\ErpToShop\service\test\testBatch.java)
+6、用最原始的js的ajax传送数据到后台
+7、上传文件
+8、下载文件
+9、Java读写CSV文件的技术
+10、Java读取excel,主要用jxl或者poi类

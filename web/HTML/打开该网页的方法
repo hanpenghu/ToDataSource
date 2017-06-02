@@ -1,0 +1,9 @@
+http://127.0.0.1:8080/ToDataSource/html/IfExsit.html
+
+我在mvc001.xml中配置了<mvc:resources location="/HTML/" mapping="/html/**"/>
+所以文件夹HTML在网址中由html来代替
+
+
+<mvc:resources location="/js/" mapping="/js/**"/>是为了避免拦截js资源
+
+还要注意的是路径中有没有ToDataSource是看web路径怎么配置的
