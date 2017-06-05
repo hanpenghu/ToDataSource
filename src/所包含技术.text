@@ -7,4 +7,7 @@
 7、上传文件
 8、下载文件
 9、Java读写CSV文件的技术
-10、Java读取excel,主要用jxl或者poi类
+10、Java读取excel,主要用jxl或者poi类(
+poi-ooxml-3.16.jar和poi-ooxml-schemas-3.16.jar,
+和xmlbeans-2.4.0.jar
+和commons-collections4-4.1.jar和poi-3.16.jar都是用来读取excel的)

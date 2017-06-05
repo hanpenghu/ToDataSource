@@ -11,9 +11,9 @@ import java.net.URLEncoder;
 import java.util.HashMap;
 import java.util.Map;
 /**
-* @param strUrl 请求地址
-* @param params 请求参数
-* @param method 请求方法
+* @param是strUrl 请求地址
+* @param是params 请求参数
+* @param是method 请求方法
 * @return  网络请求字符串
 * @throws Exception
 */
