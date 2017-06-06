@@ -1,6 +1,7 @@
 package com.test.readEXCEL.queDingPicWeiZhi002;
 
 import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
 
 /**
  * Created by Administrator on 2017/6/5.
@@ -15,9 +16,19 @@ public class PicAndRowAndColum {
 
     HSSFSheet sheet=null;
 
+    XSSFSheet XSsheet=null;
+
+
     public PicAndRowAndColum() {
     }
 
+    public XSSFSheet getXSsheet() {
+        return XSsheet;
+    }
+
+    public void setXSsheet(XSSFSheet XSsheet) {
+        this.XSsheet = XSsheet;
+    }
 
     public HSSFSheet getSheet() {
         return sheet;

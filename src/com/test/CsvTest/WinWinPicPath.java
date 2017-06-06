@@ -59,7 +59,7 @@ public class WinWinPicPath {
            alList.add(list.toArray(new String[list.size()]));
            i++;
        }
-       CSVWriter writer = new CSVWriter(new FileWriter(new File("C:\\Users\\Administrator\\Desktop\\1\\1.csv")), ',');
+       CSVWriter writer = new CSVWriter(new FileWriter(new File("C:\\Users\\Administrator\\Desktop\\1\\2.csv")), ',');
         writer.writeAll(alList);
         writer.close();
     }

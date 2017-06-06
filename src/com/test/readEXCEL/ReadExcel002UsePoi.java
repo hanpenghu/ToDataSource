@@ -50,6 +50,7 @@ public class ReadExcel002UsePoi {
         InputStream input = new FileInputStream(file);
         //得到Excel对象
         XSSFWorkbook wb =  new XSSFWorkbook(input);
+
         //得到Excel的sheet对象//从0开始索引
         XSSFSheet sheet = wb.getSheetAt(0);
         XSSFDrawing drawing = sheet.getDrawingPatriarch();
