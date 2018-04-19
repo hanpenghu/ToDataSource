@@ -1,4 +1,5 @@
 /*
+
 package com.aiBanShi.ErpToShop.service.test;
 import com.aiBanShi.ErpToShop.dto.Users;
 import com.aiBanShi.utils.SpringUtil;
@@ -13,10 +14,12 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.List;
 
+
 */
 /**
  * Created by Administrator on 2017/4/3 0003.
  *//*
+
 
 @Component("testBatch")
 public class testBatch {
@@ -54,4 +57,5 @@ public class testBatch {
         testBatch.saveBatch();
     }
 }
+
 */

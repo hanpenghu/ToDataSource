@@ -37,7 +37,7 @@ import org.openxmlformats.schemas.drawingml.x2006.spreadsheetDrawing.CTMarker;
  *         获取excel中 图片，并得到图片位置，支持03 07 多sheet
  * @since 2013-04-22
  */
-public class GetImgFromExcel网上找的的未实验成功 {
+public class GetImgFromExcel {
 
     /**
      * @param args

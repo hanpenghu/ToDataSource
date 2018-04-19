@@ -6,10 +6,7 @@ import org.apache.poi.ss.usermodel.PictureData;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.xssf.usermodel.*;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.InputStream;
+import java.io.*;
 import java.util.List;
 import java.util.Map;
 
@@ -44,7 +41,7 @@ public class ReadExcel002UsePoi {
     public static void test001() throws Exception {
 
         // 创建文件
-        File file = new File("C:\\Users\\Administrator\\Desktop\\1\\linzhan.xlsx");
+        File file = new File("E:\\1\\000\\云平台问题\\A片标批量上传模板.xlsx");
 
         // 创建流
         InputStream input = new FileInputStream(file);
@@ -56,7 +53,24 @@ public class ReadExcel002UsePoi {
         XSSFDrawing drawing = sheet.getDrawingPatriarch();
         List<XSSFShape> xShapeList = drawing.getShapes();
         XSSFPicture xPicture = (XSSFPicture) xShapeList.get(0);
-        System.out.println(xPicture.getPictureData().getPackagePart().getPartName().getName());
-        System.out.println(xPicture);
+        int i=1;
+        for(XSSFShape xs :xShapeList){
+            XSSFPicture xsp = (XSSFPicture) xs;
+
+            System.out.println(xsp.getPictureData().getPackagePart().getPartName().getName());
+            XSSFPictureData pictureData = xsp.getPictureData();
+            // 获取图片索引
+            String  picName=pictureData.toString();
+            System.out.println(picName);
+            // 获取图片格式
+            String ext = pictureData.suggestFileExtension();
+            System.out.println(ext);
+            System.out.println("D:\\pic" + picName + "." + ext);
+            byte[] data = pictureData.getData();
+            FileOutputStream out = new FileOutputStream("E:\\1\\00000\\"+i+".png");
+            out.write(data);
+            out.close();
+            i++;
+        }
     }
 }
